@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 12f2a81479fcf2a42b0d027f730e47d5
+guid: 7997728c566da0e4ca1601a6f5091175
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3394162598614181859
-    second: witch-on-broomstick_0
+      213: 2118849891550269311
+    second: bat-cloud_0
+  - first:
+      213: 6409358880411097388
+    second: bat-cloud_1
+  - first:
+      213: 7054923684142132012
+    second: bat-cloud_2
+  - first:
+      213: -2744211293981948294
+    second: bat-cloud_3
+  - first:
+      213: 4635810646742712534
+    second: bat-cloud_4
+  - first:
+      213: -1598880164825865492
+    second: bat-cloud_5
+  - first:
+      213: -203406096712342591
+    second: bat-cloud_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: witch-on-broomstick_0
+      name: bat-cloud_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d185faf791385e0d0800000000000000
-      internalID: -3394162598614181859
+      spriteID: f7f8a3e00caa76d10800000000000000
+      internalID: 2118849891550269311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: witch-on-broomstick_1
+      name: bat-cloud_1
       rect:
         serializedVersion: 2
         x: 32
@@ -148,10 +166,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 10c237681b3643b4ab5f834a149281e5
-      internalID: 791531903
+      spriteID: c2916e881fd92f850800000000000000
+      internalID: 6409358880411097388
       vertices: []
       indices: 
       edges: []
@@ -170,8 +188,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      witch-on-broomstick_0: -3394162598614181859
-      witch-on-broomstick_1: 791531903
+      bat-cloud_0: 2118849891550269311
+      bat-cloud_1: 6409358880411097388
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

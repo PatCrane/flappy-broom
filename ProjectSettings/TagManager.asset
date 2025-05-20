@@ -44,14 +44,20 @@ TagManager:
   - name: background
     uniqueID: 103060713
     locked: 0
-  - name: midground
-    uniqueID: 535913085
+  - name: midground-2
+    uniqueID: 1251987587
     locked: 0
-  - name: player-and-obstacles
-    uniqueID: 925371959
+  - name: midground-1
+    uniqueID: 1430227115
+    locked: 0
+  - name: midground-0
+    uniqueID: 535913085
     locked: 0
   - name: foreground
     uniqueID: 2820118557
+    locked: 0
+  - name: player-and-obstacles
+    uniqueID: 925371959
     locked: 0
   m_RenderingLayers:
   - Default
