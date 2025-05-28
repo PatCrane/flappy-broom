@@ -5,29 +5,27 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float _normalFlyForce = 5f;
-    //private float _boostedFlyForce = 6f;
+    
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody;
-    //private float _currentGravityScale; Mechanic to increase gravity on vertical flip. Not sure I want to use this rn.
-    
-    //public AudioSource flySound; -- Will activate once I have sound/music assets done.
+    public bool _isControllable;
+  
 
-
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        //_currentGravityScale = _rigidbody.gravityScale;
         _spriteRenderer = GetComponent<SpriteRenderer>();
-
+       _isControllable = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        FlyOnLeftClick();
-        FlipOnRightClick();
+        if (_isControllable)
+        {
+            FlyOnLeftClick();
+            FlipOnRightClick();
+        }
+        
     }
 
     void FlyOnLeftClick()
@@ -37,19 +35,17 @@ public class PlayerController : MonoBehaviour
         {
             _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocityX, 0f);
             _rigidbody.AddForce(Vector2.up * _normalFlyForce, ForceMode2D.Impulse);
-            
-            //if (flapSound) flapSound.Play();
+
         }
     }
 
 
     void FlipOnRightClick()
     {
-        if (Input.GetMouseButton(1)) // Right button is held down
+        if (Input.GetMouseButton(1)) 
         {
             _spriteRenderer.flipY = true;
-            //_rigidbody.gravityScale = currentGravityScale * 2;
-            //Debug.Log(_rigidbody.gravityScale);
+
         }
         else
         {

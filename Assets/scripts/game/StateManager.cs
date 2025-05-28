@@ -33,12 +33,32 @@ public class StateManager : MonoBehaviour
         }
     }
 
-
+    
+    //Set default game state
     void Start()
     {
         ChangeState(GameState.Start);
         OnGameStart?.Invoke();
     }
+
+    //Event Handlers
+    private void GameStateOnMobCollision()
+    {
+        ChangeState(GameState.GameOver);
+        OnGameOver?.Invoke();
+    }
+
+    //Event subscriptions
+    private void OnEnable()
+    {
+        MobCollision.OnMobCollision += GameStateOnMobCollision;
+    }
+
+    private void OnDisable()
+    {
+        MobCollision.OnMobCollision -= GameStateOnMobCollision;
+    }
+
 
     public void ChangeState(GameState newState)
     {
